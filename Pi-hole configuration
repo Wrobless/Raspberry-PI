@@ -1,2 +1,22 @@
 https://carlosfelic.io/network/configuring-the-pi-hole-with-asus-routers-merlin-or-johns-fork/
 
+>>> Router settings <<<
+
+WAN DNS Setting (for Google DNS)
+Connect to DNS server automatically -> No
+DNS Server1 -> 8.8.8.8
+DNS Server2 -> 8.8.4.4
+
+LAN -> DHCP server
+DNS and WINS Server Setting
+DNS Server1 -> 192.168.29.244 (RPi ip adress)
+Advertise router's IP -> No
+Forward local domian -> No
+
+Make sure that RPi has static IP selected
+
+>>> Pi-hole settings <<<
+ 
+ Settings -> DNS
+ + Use Conditional Forwarding
+ IP of router + local doamin name
